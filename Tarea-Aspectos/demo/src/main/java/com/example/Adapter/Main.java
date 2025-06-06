@@ -1,7 +1,9 @@
-package com.example;
+package com.example.Adapter;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ConsolaVideojuegosActual consola = new ConsolaVideojuegosActual();
+        AdaptadorHDMI adaptador = new AdaptadorHDMI(consola);
+        adaptador.Conectar();
     }
 }
