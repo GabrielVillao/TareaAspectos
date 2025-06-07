@@ -53,8 +53,8 @@
                 <version>1.14.0</version>
                 <configuration>
                     <complianceLevel>17</complianceLevel>
-                    <source>17</source>
-                    <target>17</target>
+                    <source>16</source>
+                    <target>16</target>
                     <aspectLibraries>
                         <aspectLibrary>
                             <groupId>org.aspectj</groupId>

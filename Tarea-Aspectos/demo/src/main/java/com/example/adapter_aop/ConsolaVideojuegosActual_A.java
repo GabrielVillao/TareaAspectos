@@ -1,3 +1,7 @@
+package com.example.adapter_aop;
+import org.springframework.stereotype.Component;
+
+@Component
 public class ConsolaVideojuegosActual_A {
     public boolean HDMI = false;
 

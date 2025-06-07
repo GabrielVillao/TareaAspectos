@@ -1,3 +1,8 @@
+package com.example.adapter_aop;
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class AdaptadorHDMI_A implements Televisor90s_A {
     private final ConsolaVideojuegosActual_A consola;
 
