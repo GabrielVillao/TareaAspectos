@@ -11,10 +11,25 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <aspectj.version>1.9.21</aspectj.version> <!-- última versión a la fecha -->
+        <aspectj.version>1.9.21</aspectj.version>
+        <spring.version>6.1.4</spring.version>
     </properties>
 
     <dependencies>
+        <!-- Spring Context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- Spring AOP -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
         <!-- AspectJ runtime -->
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -22,7 +37,7 @@
             <version>${aspectj.version}</version>
         </dependency>
 
-        <!-- AspectJ Weaver (necesario si haces weaving en tiempo de ejecución) -->
+        <!-- AspectJ Weaver -->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
@@ -32,7 +47,6 @@
 
     <build>
         <plugins>
-            <!-- Plugin para compilar aspectos .aj o anotaciones @Aspect -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>aspectj-maven-plugin</artifactId>
@@ -61,5 +75,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
